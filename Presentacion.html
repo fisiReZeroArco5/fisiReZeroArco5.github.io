@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Presentación</title>
+    <link rel="icon" href="/Ram.ico" type="image/x-icon">
+    <style>
+        body {
+            background-image: url('fondo.jpg');
+            background-size: cover;
+            background-attachment: fixed;
+            font-family: 'Roboto', Arial, sans-serif;
+            color: white;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Encabezado */
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 50px;
+            background-color: rgba(0, 0, 0, 0.7);
+            border-bottom: 2px solid white;
+        }
+        
+        header img {
+            height: 120px; /* Tamaño de la imagen aumentado */
+            border-radius: 10px;
+            transition: transform 0.3s ease;
+        }
+
+        header img:hover {
+            transform: scale(1.1); /* Efecto de agrandamiento en hover */
+        }
+
+        header div {
+            text-align: center;
+            max-width: 60%;
+        }
+
+        header h1 {
+            font-size: 3rem; /* Título más grande */
+            margin: 0;
+            text-shadow: 3px 3px 5px black; /* Mejora de la sombra */
+        }
+
+        header p {
+            margin: 10px 0;
+            font-size: 1.2rem;
+            line-height: 1.6;
+            text-shadow: 1px 1px 3px black;
+        }
+
+        /* Navegación */
+        nav {
+            margin: 40px auto;
+            text-align: center;
+        }
+
+        nav h2 {
+            font-size: 2.5rem;
+            margin-bottom: 15px;
+            text-shadow: 3px 3px 6px black;
+            text-decoration: underline;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline-block;
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            font-size: 1.4rem; /* Un poco más grande */
+            padding: 12px 18px;
+            border: 2px solid white;
+            border-radius: 8px;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        nav ul li a:hover {
+            background-color: white;
+            color: black;
+            transform: scale(1.05); /* Efecto de agrandamiento en hover */
+        }
+
+        /* Media query para dispositivos más pequeños */
+        @media (max-width: 768px) {
+            header {
+                flex-direction: column;
+                padding: 20px;
+            }
+
+            header img {
+                height: 100px;
+            }
+
+            header h1 {
+                font-size: 2.4rem;
+            }
+
+            nav ul li {
+                display: block;
+                margin: 10px 0;
+            }
+
+            nav h2 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+       
+            <img src="logo-UNAP.png" alt="Logo Izquierdo">
+        
+        <div>
+            <h1>Carátula del Proyecto</h1>
+            <p><strong>Estudiante:</strong> Saboya Vega Geanlucas Mateos</p>
+            <p><strong>Universidad:</strong> Universidad Nacional de la Amazonía Peruana</p>
+            <p><strong>Facultad:</strong> Ingeniería de Sistemas e Informática</p>
+            <p><strong>Curso:</strong> Informática II</p>
+            <p><strong>Docente:</strong> Ing. Luis Honorato Pita Astengo</p>
+            <p><strong>Tema:</strong> Re:Zero Arco 5</p>
+        </div>
+        <img src="Fisi-preview.png" alt="Logo Derecho">
+    </header>
+    <nav>
+        <h2>Índice</h2>
+        <ul>
+            <li><a href="/Principal/Principal.html">Página Principal</a></li> 
+            <li><a href="/Principal/Contenido 1/Introducción.htm">Introducción</a></li> 
+            <li><a href="/Principal/Contenido 2/Nuevas Tramas.html">Nuevas Tramas</a></li> 
+            <li><a href="/Principal/Contenido 3/Final.html">Final</a></li>
+            <li><a href="/Fuentes Bibliograficas/Fuentes.html">Fuentes Bibliográficas</a></li>
+        </ul>
+    </nav>
+</body>
+</html>
