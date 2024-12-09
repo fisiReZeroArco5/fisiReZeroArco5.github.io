@@ -74,6 +74,21 @@
         .character-list li strong {
             font-weight: bold;
         }
+
+        /* Estilos responsivos */
+        @media (max-width: 768px) {
+            .container {
+                width: 90%;
+            }
+            .image-container img, .video-container video {
+                max-width: 100%;
+                height: auto;
+            }
+            .character-list li {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+        }
     </style>
 </head>
 <body>
@@ -99,25 +114,25 @@
                 </p>
                 <ul class="character-list">
                     <li>
-                        <img src="Nsubaru.jpg" >
+                        <img src="Nsubaru.jpg" alt="Subaru Natsuki">
                         <div>
                             <strong>Subaru Natsuki</strong>: El protagonista principal, cuya habilidad para morir y resucitar sigue siendo central en la trama. A lo largo de la temporada, Subaru lucha por mantener su humanidad mientras se enfrenta a los dilemas morales que surgen con sus poderes.
                         </div>
                     </li>
                     <li>
-                        <img src="emilia_5551.jpg" >
+                        <img src="emilia_5551.jpg" alt="Emilia">
                         <div>
                             <strong>Emilia</strong>: La medio-elfa, que juega un papel crucial en la lucha por el trono y los eventos políticos en el nuevo continente. Emilia debe confrontar sus propios miedos mientras trabaja al lado de Subaru, enfrentando los retos del poder y la responsabilidad.
                         </div>
                     </li>
                     <li>
-                        <img src="Beatrice.jpg" >
+                        <img src="Beatrice.jpg" alt="Beatrice">
                         <div>
                             <strong>Beatrice</strong>: La enigmática maga que continúa ayudando a Subaru, aunque con motivos propios que se desarrollan más en esta temporada. Su historia, misteriosa y llena de secretos, es uno de los pilares narrativos de esta temporada.
                         </div>
                     </li>
                     <li>
-                        <img src="roswall.jpg" >
+                        <img src="roswall.jpg" alt="Roswaal L. Mathers">
                         <div>
                             <strong>Roswaal L. Mathers</strong>: Un personaje con intenciones ambiguas, cuya lealtad y objetivos se ponen a prueba. Roswaal sigue siendo uno de los personajes más complejos de la serie, moviéndose entre la oscuridad y la luz.
                         </div>
@@ -162,13 +177,12 @@
                 <h3>Escucha el tema musical de la temporada 3</h3>
                 <audio controls>
                     <source src="/Principal/Contenido 1/Op re zero 3.mp3" type="audio/mp3">
-                    
                 </audio>
             </div>
 
             <div class="video-container">
                 <h3>Ending de la Temporada 3</h3>
-                <video controls>
+                <video controls style="width: 100%; max-width: 600px; height: auto;">
                     <source src="/Principal/Contenido 1/Re zero 3 ending.mp4" type="video/mp4">
                 </video>
             </div>
@@ -184,4 +198,3 @@
     </footer>
 </body>
 </html>
-

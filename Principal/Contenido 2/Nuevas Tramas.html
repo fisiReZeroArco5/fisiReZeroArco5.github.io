@@ -41,6 +41,11 @@
             text-align: center;
             margin: 20px 0;
         }
+        .video-container video {
+            width: 100%;
+            max-width: 800px; /* Limitar el tamaño del video en pantallas grandes */
+            height: auto;
+        }
         .navigation {
             text-align: center;
             margin-top: 20px;
@@ -61,6 +66,21 @@
         }
         .character-analysis h3 {
             color: #4CAF50;
+        }
+
+        /* Estilos responsivos */
+        @media (max-width: 768px) {
+            .container {
+                width: 90%;
+            }
+            .image-container img {
+                max-width: 100%;
+                height: auto;
+            }
+            .video-container video {
+                max-width: 100%;
+                height: auto;
+            }
         }
     </style>
 </head>
@@ -144,4 +164,3 @@
     </footer>
 </body>
 </html>
-
